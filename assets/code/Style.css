@@ -1,0 +1,43 @@
+﻿body
+{
+    background-color: black;
+}
+.jumbotron
+{
+    background-color: black;
+    color: white;
+}
+#banner {
+    text-align: center;
+    color: white;
+    font-family: 'Libre Baskerville';
+
+}
+#ball
+{
+    margin-left: 15%;
+
+}
+#board
+{
+    position:absolute;
+    top:0;
+    max-width:280px;
+    background-color: gray;
+    color:black;
+    z-index: 1;
+
+}
+#reset
+{
+     margin-left: 45%;
+}
+#game
+{
+    border-top: 3px solid white;
+    text-align: center;
+    font-family: 'Cinzel', serif;
+    color: white;
+    bottom:0;
+    font-size: 25px;
+}
