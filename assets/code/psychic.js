@@ -45,15 +45,15 @@ var reset = function() {
 }
 
 // Reload function
-var reset = function reload() {
-    totalGuesses = 9;
-    guessesLeft = 9;
-    guessedLetters = [];
+//var reset = function reload() {
+    //totalGuesses = 9;
+    //guessesLeft = 9;
+    //guessedLetters = [];
 
-    updateGuessesLeft();
-    updateGuessedLetters();
-    updateLetterToGuess();
-}
+    //updateGuessesLeft();
+    //updateGuessedLetters();
+    //updateLetterToGuess();
+//}
 
 updateLetterToGuess();
 // updateGuessesLeft;
@@ -98,7 +98,7 @@ document.onkeyup = function() {
 			// User guesses correctly
             if (userGuess===computerGuess){
                 wins++, reset();
-                alert("ARE psychic?"); 
+                alert("ARE psychic? How did you know that the letter was  " + computerGuess + "."); 
                 document.querySelector('#wins').innerHTML = "Wins: " + wins;
                 displayWinPsychic();
                        
@@ -108,7 +108,7 @@ document.onkeyup = function() {
             // Lose and update the loss 
             losses++, reset();
             document.querySelector('#losses').innerHTML = "Losses: " + losses;
-            alert("Sorry, you lost. The letter was " + letterToGuess + ".");
+            alert("Sorry, you lost. The letter was  " + letterToGuess + ".");
             displayLosePsychic();
         }    
 };
